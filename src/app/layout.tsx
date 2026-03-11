@@ -1,10 +1,13 @@
 import "./globals.css";
 import type { ReactNode } from "react";
+import { AppChrome } from "@/components/ui/app-chrome";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <AppChrome>{children}</AppChrome>
+      </body>
     </html>
   );
 }
